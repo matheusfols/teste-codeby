@@ -1,0 +1,370 @@
+/**
+    Config
+*/
+/**
+    Colors
+*/
+html,
+body {
+  font-size: 16px;
+  font-family: 'Poppins';
+  color: #383838; }
+
+.hide {
+  display: none; }
+
+/**
+    Partials
+*/
+#MiniCart {
+  display: flex;
+  width: 400px;
+  max-width: 90%;
+  height: calc(100% - 5vh);
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  justify-content: space-between; }
+
+#MiniCart .minicart-header {
+  display: flex;
+  flex-direction: column; }
+
+#MiniCart .minicart-header h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  line-height: 2.25rem;
+  border-bottom: 1px solid #e6e6e6; }
+
+#MiniCart .minicart-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  justify-content: baseline; }
+
+#MiniCart .minicart-content .list-product-cart {
+  padding: 1rem 0; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart {
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart:last-child {
+  margin-bottom: 0; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart-image {
+  width: 100%;
+  max-height: 68px;
+  max-width: 68px;
+  margin: 0;
+  padding: 0; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart-image img {
+  width: 100%;
+  height: auto;
+  max-height: 68px;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.75rem; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart-info .productName {
+  font-size: 0.875rem;
+  font-weight: bold; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart-info .listPrice {
+  font-size: 0.75rem;
+  color: #ccc; }
+
+#MiniCart .minicart-content .list-product-cart .product-cart-info .bestPrice {
+  font-size: 0.875rem;
+  font-weight: bold; }
+
+#MiniCart .minicart-footer {
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column; }
+
+#MiniCart .minicart-footer .cart-values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0.9375rem 1rem;
+  font-weight: bold;
+  font-size: 0.9375rem; }
+
+#MiniCart .minicart-footer .cart-values ul {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+#MiniCart .minicart-footer .cart-values ul li {
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+  display: flex; }
+
+#MiniCart .minicart-footer .cart-values .msg {
+  width: 80%;
+  background-color: #c7ffa6;
+  color: #28a745;
+  text-align: center;
+  padding: 5px 10px;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  border-radius: 33px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 5px; }
+
+#MiniCart .minicart-footer .action {
+  display: flex;
+  justify-content: center;
+  padding: 0.9375rem 1rem;
+  border-top: 1px solid #e6e6e6; }
+
+#MiniCart .minicart-footer .action #btnCheckout {
+  width: 100%;
+  padding: 0.8125rem 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #3b74f2;
+  color: #FFF;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; }
+
+#MiniCart .minicart-footer .action #btnCheckout:hover {
+  background-color: rgba(59, 116, 242, 0.8); }
+
+#banner {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: auto; }
+
+#banner .banner-items {
+  width: 100%;
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+  transition: transform 1s ease-in-out;
+  margin: 0;
+  padding: 0; }
+
+#banner .banner-items .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  text-align: center;
+  padding: 3.125rem 0rem; }
+
+#banner .banner-items .item .item-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center; }
+
+#banner .banner-items .item .item-content h2 {
+  width: 35%;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  color: #FFF;
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+#banner .banner-items .item .item-content .btnBanner {
+  display: inline-block;
+  width: 190px;
+  max-width: 100%;
+  padding: 1.5625rem 0.3125rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #383838;
+  background-color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+#banner .banner-items .item .item-content .btnBanner:hover {
+  color: #FFF;
+  background-color: rgba(56, 56, 56, 0.8); }
+
+/**
+    Controllers
+*/
+#testeLayout {
+  padding: 0;
+  margin: 0; }
+
+#testeLayout img {
+  max-width: 100%; }
+
+#testeLayout .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+#testeLayout .categories {
+  margin-top: 1rem; }
+
+#testeLayout .categories h2 {
+  display: flex;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.375rem;
+  margin: 0;
+  flex-direction: column; }
+
+#testeLayout .categories h2 small {
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.875rem; }
+
+#testeLayout .categories .list-categories {
+  display: flex;
+  flex-flow: wrap;
+  writing-mode: horizontal-tb;
+  justify-content: space-between;
+  margin-top: 2rem; }
+
+#testeLayout .categories .list-categories .categorie {
+  position: relative;
+  margin-bottom: 2%; }
+
+#testeLayout .categories .list-categories .categorie a {
+  text-decoration: none;
+  color: #FFF; }
+
+#testeLayout .categories .list-categories .categorie a h3 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.1875rem;
+  top: 45px;
+  left: 40px;
+  margin: 0; }
+
+#testeLayout .categories .list-categories .categorie a h3 small {
+  font-size: 1rem; }
+
+#testeLayout .categories .list-categories .categorie a img {
+  height: auto;
+  max-height: 356px;
+  border: 0; }
+
+#testeLayout .categories .list-categories .categorie a:hover h3 {
+  text-decoration: underline; }
+
+#testeLayout .growthplans {
+  background-color: #f4f4f4; }
+
+#testeLayout .growthplans .listPlans {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 4rem 0; }
+
+#testeLayout .growthplans .listPlans h2 {
+  display: flex;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.375rem;
+  margin: 0 0 -5% 0;
+  flex-direction: column; }
+
+#testeLayout .growthplans .listPlans h2 small {
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.875rem; }
+
+#testeLayout .growthplans .listPlans .plans {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 25vw;
+  max-height: 50vw; }
+
+#testeLayout .growthplans .listPlans .plans .plan {
+  color: #FFF;
+  background-color: #0088ed;
+  font-size: 0.75rem;
+  margin-right: 1rem;
+  width: 100%;
+  max-width: 239px; }
+
+#testeLayout .growthplans .listPlans .plans .plan:last-child {
+  margin-right: 0; }
+
+#testeLayout .growthplans .listPlans .plans .plan-value {
+  display: flex;
+  padding: 1rem;
+  height: 80px;
+  background-color: #005499;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-style: normal; }
+
+#testeLayout .growthplans .listPlans .plans .plan-value strong {
+  font-size: 1.875rem;
+  line-height: 1.875rem; }
+
+#testeLayout .growthplans .listPlans .plans .plan-value span {
+  font-size: 1.0625rem; }
+
+#testeLayout .growthplans .listPlans .plans .plan-info {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-end; }
+
+#testeLayout .growthplans .listPlans .plans .plan.plan1 .plan-info {
+  height: 5vw; }
+
+#testeLayout .growthplans .listPlans .plans .plan.plan2 .plan-info {
+  height: 8.5vw; }
+
+#testeLayout .growthplans .listPlans .plans .plan.plan3 .plan-info {
+  height: 12vw; }
+
+#testeLayout .growthplans .listPlans .plans .plan.plan4 .plan-info {
+  height: 15.5vw; }
+
+#testeLayout .growthplans .listPlans .plans .plan.plan5 .plan-info {
+  height: 19.5vw; }
+
+#testeLayout .growthplans .listPlans .plans .plan.plan6 .plan-info {
+  height: 23.5vw; }
+
+/**
+    Medias
+*/
